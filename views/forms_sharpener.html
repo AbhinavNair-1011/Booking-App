@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../public/js/booking.js"></script>
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navTag">
+        <h1 id="navTag_heading">BOOK   A   CALL</h1>
+        <p id="navTag_paragraph">Book a slot and we will call you within the selected time</p>
+
+    </nav>
+    <div id="mainDiv">
+        <div id="formDiv">
+            <form action="" method="POST" id="form">
+                <div class="inputWrap">
+                    <label for="name" class="form_label">NAME:</label>
+                    <input type="text" id="name" name="name" class="formInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="email" class="form_label">EMAIL:</label>
+                    <input type="email" id="email" name="email" class="formInput">
+                </div>
+                <div class="inputWrap">
+
+                    <label for="phone" class="form_label">PHONE NO:</label>
+                    <input type="number" id="phone" name="phone" class="formInput">
+                </div>
+                <div class="inputWrap">
+                    <label for="date" class="form_label">DATE:</label>
+                    <input type="date" id="date" name="date" class="formInput">
+                </div>
+
+                <input type="submit" value="Get A Call" id="formSubmit">
+            </form>
+
+        </div>
+
+
+               <button class="button">Rotate your screen to view user details</button>
+        <div id="userDiv">
+            <table id="userTable">
+                <thead id="userTable_head">
+                    <tr id="userTable_head_row">
+                        <th id="userTable_head_data">Id</th>
+                        <th id="userTable_head_data">Name</th>
+                        <th id="userTable_head_data">Email</th>
+                        <th id="userTable_head_data">PhoneNumber</th>
+                        <th id="userTable_head_data">Date</th>
+                    </tr>
+                </thead>
+                <tbody id="usertable_body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

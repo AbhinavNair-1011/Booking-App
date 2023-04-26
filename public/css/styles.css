@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+#navTag{
+   
+    background-color: black ;
+    color:burlywood;
+}
+#navTag_heading{
+  letter-spacing: 10px;;
+font-family: 'lobster','cursive';
+  font-size: 43px;
+    padding:10px;
+    color:rgb(48, 98, 236);
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#navTag_paragraph{
+    
+font-size:19px;
+padding:8px;
+text-align: center;
+}
+#mainDiv{
+    display:flex;
+    flex-direction: column;
+    color:burlywood;
+    
+}
+#formDiv{
+ 
+    padding:10px;
+    
+    max-height: max-content;
+    
+}
+#form{
+    margin:auto;
+  display: flex;
+  flex-direction: column;
+ margin-top:20px;
+    width:80%;
+   
+   
+
+}
+.inputWrap{
+    display:flex;
+    justify-content: center;
+    padding:15px;
+   
+}
+.form_label{
+    width:100px;
+    text-align: center;
+    font-size:17px;
+}
+.formInput{
+width:250px;
+color:white;
+font-size:15px;
+}
+#formSubmit{
+    width:130px;
+    height:28px;
+    align-self: center;
+    background-color: green;
+    color:black;
+    font-size:16px;
+    color:aliceblue;
+    margin:17px 0;
+}
+#userDiv{
+  display: flex;
+  justify-content: center;
+}
+#userTable{
+    border: 2.5px solid burlywood;
+    width:87%;
+    background-color: black;
+    color:white;
+    
+     
+}
+#userTable_head_data{
+    border:2px solid burlywood;
+    font-size:20px;
+}
+
+tr{
+    border:1px solid burlywood;
+}
+td{
+    border:1px solid burlywood;
+    text-align: center;
+}
+.delete{
+    width:70px;
+    margin:auto;
+    background-color: red;
+    color:white;
+
+}
+.button{
+    display: none;
+}
+@media(max-width:520px)
+{
+    *{
+        margin:0;
+        padding:0;
+        background-color: black;
+    }
+    #navTag{
+       
+        background-color: black ;
+        color:burlywood;
+    }
+    #navTag_heading{
+      letter-spacing: 7px;;
+    font-family: 'lobster','cursive';
+      font-size: 33px;
+        padding:7px;
+        color:rgb(48, 98, 236);
+        height:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #navTag_paragraph{
+        
+    font-size:17px;
+    padding:5px;
+    text-align: center;
+    }
+    #mainDiv{
+        display:flex;
+        flex-direction: column;
+        color:burlywood;
+        
+    }
+    #formDiv{
+     
+        padding:10px;
+        
+        max-height: max-content;
+        
+    }
+    #form{
+        margin:auto;
+      display: flex;
+      flex-direction: column;
+     margin-top:20px;
+        width:100%;
+       
+       
+    
+    }
+    .inputWrap{
+        display:flex;
+        justify-content: center;
+        padding:15px;
+       
+    }
+    .form_label{
+        width:100px;
+        text-align: center;
+        font-size:15px;
+    }
+    .formInput{
+    width:250px;
+    color:white;
+    font-size:13px;
+    }
+    #formSubmit{
+        width:100px;
+        height:25px;
+        align-self: center;
+        background-color: green;
+        color:black;
+        font-size:16px;
+        color:aliceblue;
+        margin:17px 0;
+    }
+    #userDiv{
+      display: flex;
+      justify-content: center;
+      flex-shrink: 1
+;
+    }
+    #userTable{
+        display: none;
+        border: 1px solid burlywood;
+        width:100%;
+        background-color: black;
+        color:white;
+        font-size:13px;
+        
+         
+    }
+    #userTable_head_data{
+        border:1px solid burlywood;
+       
+    }
+    
+    tr{
+        border:1px solid burlywood;
+    }
+    td{
+        border:1px solid burlywood;
+        text-align: center;
+    }
+    .delete{
+        width:70px;
+        margin:auto;
+        background-color: red;
+        color:white;
+    
+    }
+    .button{
+        display:unset;
+        width:200px;
+        height:40px;
+        color:white;
+        margin:auto
+    }
+    @media(orientation: landscape){
+        #userTable{
+            display: unset;
+    }
+}
+}
