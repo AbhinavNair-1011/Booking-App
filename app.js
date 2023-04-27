@@ -12,13 +12,15 @@ const deleteUser=require("./routes/delete-user")
 // const create=require("./database/create table")
 
 
-app.use(express.static("/public"));
+app.use(express.static(__dirname+"/public"));
 app.use(cors());
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json({extended:false}))
 
 
-
+app.get("/",(req,res)=>{
+res.status(200).sendFile(__dirname+"/views/forms_sharpener.html")
+})
 app.use(addUser)
 app.use(fetchUser);
 app.use(deleteUser)
